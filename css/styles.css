@@ -400,7 +400,7 @@ button {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-general-container {
+.footer {
     display: flex;
     align-items: baseline;
 }
@@ -420,17 +420,17 @@ button {
 .footer__logo_color {
     color: var(--third-text-color);
 }
-address {
+.footer__adress__container {
     margin-top: 20px;
 }
-.adress-container {
+.footer__adress {
     display: block;
 }
-.footer-container {
+.adress-content {
     padding-left: 0;
     margin: 0;
 }
-.footer-adress {
+.footer-list__adress {
     color: var(--third-text-color);
     font-style: normal;
     font-size: 14px;
@@ -439,11 +439,11 @@ address {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-adress:hover,
-.footer-adress:focus {
+.footer-list__adress:hover,
+.footer-list__adress:focus {
     color: var(--accent-color);
 }
-.footer-contacts {
+.footer-list__contacts {
     color: var(--footer-text-color);
     font-style: normal;
     font-size: 14px;
@@ -453,25 +453,25 @@ address {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-list__contacts:hover,
+.footer-list__contacts:focus {
     color: var(--accent-color);
 }
-.list-footer {
+.footer-list {
     list-style-type: none;
 }
-.list-footer:not(:first-child) {
+.footer-list:not(:first-child) {
     margin-top: 9px;
 }
-.connect-container {
+.footer__socials {
     margin-left: 70px;
 }
-.container-connect-item {
+.footer__socials__items {
     display: flex;
     padding-left: 0;
     gap: 10px;
 }
-.connect-caption {
+.footer__socials__subtitle {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -483,7 +483,7 @@ address {
     margin-top: 0;
     margin-bottom: 20px;
 }
-.connect-link {
+.footer__socials__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -495,18 +495,18 @@ address {
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.connect-link:hover,
-.connect-link:focus {
+.footer__socials__link:hover,
+.footer__socials__link:focus {
     background-color: var(--accent-color);
 }
-.connect-item {
+.footer__socials__icon {
     fill: currentColor;
 }
-.field-footer {
+.footer__form {
     display: flex;
     margin-left: 93px;
 }
-.field-caption {
+.footer__form__subtitle {
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -519,10 +519,10 @@ address {
 
     color: var(--third-text-color);
 }
-.footer-form {
+.footer__form__box {
     display: flex;
 }
-.field-button {
+.footer__form__button {
     width: 200px;
     height: 50px;
     display: flex;
@@ -545,7 +545,7 @@ address {
     border-radius: 4px;
     border-color: transparent;
 }
-.field-input {
+.footer__form__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -566,10 +566,10 @@ address {
     padding-left: 16px;
 }
 
-.field-input::placeholder {
+.footer__form__input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
-.send-item {
+.footer__form__button__icon {
     fill: var(--footer-items-color);
     margin-left: 10px;
 }
@@ -589,18 +589,18 @@ address {
     clip-path: inset(50%);
     margin: -1px;
 }
-.list-filtres {
+.filtres {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
-.filtres {
+.filtres-list {
     list-style-type: none;
 }
-.filtres + .filtres {
+.filtres-list + .filtres-list {
     margin-left: 8px;
 }
-.bg-filtres {
+.filtres__button_color {
     background-color: rgba(245, 244, 250, 1);
     color: var(--primary-text-color);
 
@@ -608,14 +608,14 @@ address {
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bg-filtres:hover,
-.bg-filtres:focus {
+.filtres__button_color:hover,
+.filtres__button_color:focus {
     background-color: var(--accent-color);
     color: var(--third-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.text-filtres {
+.filtres__button__text {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -632,27 +632,27 @@ address {
     flex-wrap: wrap;
     gap: 30px;
 }
-.projects {
+.projects-list {
     list-style-type: none;
     width: calc((100% - 60px) / 3);
 }
 
-.projects-link {
+.projects-list__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-link:hover,
-.projects-link:focus {
+.projects-list__link:hover,
+.projects-list__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects-text {
+.projects-list__desc {
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
 }
-.caption-projects {
+.projects-list__desc__subtitle {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -661,7 +661,7 @@ address {
     margin: 0;
     margin-bottom: 4px;
 }
-.desk-projects {
+.projects-list__desc__text {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.87;
@@ -672,16 +672,17 @@ a {
     text-decoration: none;
 }
 
-.projects-thumb {
+.projects-list__thumb {
     position: relative;
     overflow: hidden;
+    height: 294px;
 }
-.projects:hover .projects-information,
-.projects:focus .projects-information {
+.projects-list:hover .projects-list__overlay,
+.projects-list:focus .projects-list__overlay {
     opacity: 1;
     transform: translateY(0);
 }
-.projects-information {
+.projects-list__overlay {
     position: absolute;
     bottom: 0;
     background-color: rgba(33, 150, 243, 0.9);
@@ -695,7 +696,7 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-information-text {
+.projects-list__overlay__text {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -743,7 +744,7 @@ a {
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-.close-modal {
+.modal__button_close {
     position: fixed;
     top: 8px;
     right: 8px;
@@ -758,12 +759,12 @@ a {
     align-items: center;
     padding: 0;
 }
-.close-modal:hover,
-.close-modal:focus {
+.modal__button_close:hover,
+.modal__button_close:focus {
     fill: var(--accent-color);
 }
 
-.modal-name {
+.modal__subtitle {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -775,7 +776,7 @@ a {
     margin: 0;
     margin-bottom: 12px;
 }
-.modal-label {
+.modal-form__label {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -785,7 +786,7 @@ a {
     color: var(--secondary-text-color);
 }
 
-.modal-input {
+.modal-form__input {
     display: flex;
     width: 100%;
     height: 40px;
@@ -801,17 +802,17 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+.modal-form__input:focus {
     border: 1px solid var(--accent-color);
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-form__input:focus + .modal-form__input__icon {
     fill: var(--accent-color);
 }
-.input-wrap {
+.modal-form__wrap {
     position: relative;
 }
-.modal-input-icon {
+.modal-form__input__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -824,7 +825,7 @@ a {
     margin-bottom: 10px;
     margin: 0 auto;
 }
-.modal-input-comment {
+.modal-form__comment {
     display: flex;
     width: 100%;
     height: 120px;
@@ -845,10 +846,10 @@ a {
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input-comment:focus {
+.modal-form__comment:focus {
     border-color: var(--accent-color);
 }
-.modal-input-comment::placeholder {
+.modal-form__comment::placeholder {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -867,7 +868,7 @@ a {
     margin-bottom: 30px;
 }
 
-.text-checkbox {
+.modal-checkbox__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -881,7 +882,7 @@ a {
 
     color: var(--secondary-text-color);
 }
-.text-checkbox span {
+.modal-checkbox__text span {
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
@@ -896,18 +897,18 @@ a {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-check:checked + .text-checkbox span {
+.modal-checkbox__input:checked + .modal-checkbox__text span {
     background-color: var(--accent-color);
     border-color: transparent;
     fill: var(--third-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-check:focus + .text-checkbox span {
+.modal-checkbox__input:focus + .modal-checkbox__text span {
     border-color: var(--accent-color);
 }
 
-.condition {
+.modal-checkbox__text_condition {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -918,11 +919,11 @@ a {
     color: var(--accent-color);
     text-decoration: underline;
 }
-.modal-button {
+.modal__button__box {
     display: flex;
     justify-content: center;
 }
-.modal-button-text {
+.modal__button__text {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -942,7 +943,7 @@ a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button-text:hover,
-.modal-button-text:focus {
+.modal__button__text:hover,
+.modal__button__text:focus {
     background-color: #188ce8;
 }
